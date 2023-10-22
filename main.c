@@ -6,7 +6,7 @@
 /*   By: ecarvalh <ecarvalh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 21:56:00 by ecarvalh          #+#    #+#             */
-/*   Updated: 2023/10/22 17:17:28 by ecarvalh         ###   ########.fr       */
+/*   Updated: 2023/10/22 21:07:38 by ecarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,12 @@ int	main(void)
 	}
 	line = get_next_line(fd);
 	printf("%s\n", line);
+	line = get_next_line(fd);
+	printf("%s\n", line);
+	/*while (line)
+	{
+		printf("%s\n", line);
+		line = get_next_line(fd);
+	}*/
 	free(line);
 }

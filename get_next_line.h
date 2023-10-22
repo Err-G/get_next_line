@@ -6,7 +6,7 @@
 /*   By: ecarvalh <ecarvalh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/15 12:38:16 by ecarvalh          #+#    #+#             */
-/*   Updated: 2023/10/22 16:19:13 by ecarvalh         ###   ########.fr       */
+/*   Updated: 2023/10/22 21:28:08 by ecarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,8 @@
 
 char	*get_next_line(int fd);
 
-int		ft_strlen(char *str);
+size_t	ft_strlen(char *str);
 char	*ft_strchr(char const *str, int c);
 char	*ft_strjoin(char *s1, char *s2);
-char	*ft_substr(char *s, unsigned int start, size_t len);
 
 #endif

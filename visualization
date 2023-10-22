@@ -1,0 +1,16 @@
+static char buff[BUFFER_SIZE];
+read(fd, buff, BUFFER_SIZE);
+while (!ft_strchr(buff, '\n'))
+{
+	res = ft_strjoin(res, buff);
+	read(fd, buff, BUFFER_SIZE);
+}
+if (len < 0 || (len == 0 && !*buff))
+{
+	free(res);
+	return (NULL);
+}
+else if (len > 0)
+{
+}
+return (res);
