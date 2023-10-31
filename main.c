@@ -6,7 +6,7 @@
 /*   By: ecarvalh <ecarvalh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 21:56:00 by ecarvalh          #+#    #+#             */
-/*   Updated: 2023/10/22 21:07:38 by ecarvalh         ###   ########.fr       */
+/*   Updated: 2023/10/31 21:06:27 by ecarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 int	main(void)
 {
 	int		fd;
+	int		n;
 	char	*line;
 
 	fd = open("test.txt", O_RDWR);
@@ -30,13 +31,11 @@ int	main(void)
 		return (1);
 	}
 	line = get_next_line(fd);
-	printf("%s\n", line);
-	line = get_next_line(fd);
-	printf("%s\n", line);
-	/*while (line)
+	n = 0;
+	while (line)
 	{
-		printf("%s\n", line);
+		printf("[%d] %s", n++, line);
+		free(line);
 		line = get_next_line(fd);
-	}*/
-	free(line);
+	}
 }

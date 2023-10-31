@@ -6,7 +6,7 @@
 /*   By: ecarvalh <ecarvalh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/15 12:38:16 by ecarvalh          #+#    #+#             */
-/*   Updated: 2023/10/22 21:28:08 by ecarvalh         ###   ########.fr       */
+/*   Updated: 2023/10/31 19:56:48 by ecarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@
 char	*get_next_line(int fd);
 
 size_t	ft_strlen(char *str);
-char	*ft_strchr(char const *str, int c);
+char	*ft_strchr(char *str, int c);
+void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strjoin(char *s1, char *s2);
 
 #endif
